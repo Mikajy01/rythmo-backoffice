@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import type { AdminUserDetail, PlanView, SubscriptionRecordView } from '@rythmo/engine';
+import type { AdminUserDetail, PlanView, SubscriptionRecordView } from '@/contracts';
 import { ArrowLeft, Ban, Crown, Hourglass, Pencil, ShieldCheck, Trash2 } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router';

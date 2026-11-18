@@ -1,5 +1,5 @@
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import type { DashboardOverview, SubscriptionTier } from '@rythmo/engine';
+import type { DashboardOverview, SubscriptionTier } from '@/contracts';
 import { Activity, Banknote, Crown, Receipt, TrendingUp, UserMinus, UserPlus, Users } from 'lucide-react';
 import { Link } from 'react-router';
 import { BarList, DonutChart } from '@/components/charts/distribution';

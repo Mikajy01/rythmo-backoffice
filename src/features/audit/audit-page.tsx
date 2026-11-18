@@ -1,5 +1,5 @@
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import type { AuditEntryView, Paginated } from '@rythmo/engine';
+import type { AuditEntryView, Paginated } from '@/contracts';
 import { ScrollText, Search } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';

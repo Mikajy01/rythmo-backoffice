@@ -1,4 +1,4 @@
-import type { CurrencyConfig } from '@rythmo/engine';
+import type { CurrencyConfig } from '@/contracts';
 
 /**
  * `Intl` sépare les milliers par une espace fine insécable (U+202F) que Plus Jakarta Sans ne dessine pas :

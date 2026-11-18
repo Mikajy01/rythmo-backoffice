@@ -4,9 +4,26 @@ Application d'administration de Rythmo — React 19 + Vite + Tailwind 4 + TanSta
 visuelle que l'application (jetons de couleur, Plus Jakarta Sans, thème clair/sombre). Elle ne fait
 aucun calcul : tout vient de l'API (`/api/admin/*`).
 
+**Ce projet est autonome** : il s'installe et se lance seul. Il a seulement besoin que l'API tourne
+(par défaut sur `http://localhost:3000`, voir le proxy dans `vite.config.ts`).
+
 ```bash
-npm run dev          # depuis la racine : tout l'environnement ; back-office sur http://localhost:5174
-npm run seed:backoffice   # (facultatif) ~120 comptes de démonstration pour remplir les graphiques
+npm install
+npm run dev          # http://localhost:5174
+npm run build        # vérification des types + build de production (dist/)
+```
+
+Pour remplir les graphiques avec des comptes de démonstration, depuis le projet API :
+`npm run seed:backoffice`.
+
+## Contrats de l'API
+
+Les types des réponses (`src/contracts/*.d.ts`, sans aucun code) sont une **copie générée** par le projet
+API. On les importe avec `import type { … } from '@/contracts'`. Pour les mettre à jour après un
+changement de l'API :
+
+```bash
+cd ../api && npm run contracts:export -- ../admin/src/contracts ../web/src/contracts
 ```
 
 Premier lancement : l'API crée un administrateur de test et écrit ses identifiants dans

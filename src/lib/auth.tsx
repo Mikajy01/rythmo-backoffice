@@ -1,5 +1,5 @@
 import { useQueryClient } from '@tanstack/react-query';
-import type { AdminPermission, AdminProfile, AdminSession } from '@rythmo/engine';
+import type { AdminPermission, AdminProfile, AdminSession } from '@/contracts';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { api, getToken, setToken, setUnauthorizedHandler } from './api';
 

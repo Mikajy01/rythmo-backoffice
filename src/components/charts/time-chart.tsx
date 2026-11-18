@@ -1,4 +1,4 @@
-import type { SeriesPoint } from '@rythmo/engine';
+import type { SeriesPoint } from '@/contracts';
 import { useState } from 'react';
 import { useElementWidth } from '@/lib/hooks';
 import { formatCompact, formatDayMonth, formatNumber } from '@/lib/format';

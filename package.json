@@ -1,14 +1,14 @@
 {
-  "name": "@rythmo/admin",
+  "name": "rythmo-admin",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "Back-office Rythmo — tableau de bord, utilisateurs, offres, promotions. React + Vite + Tailwind.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "build": "npm run typecheck && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json"
   },
   "dependencies": {
     "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
@@ -19,8 +19,8 @@
     "react-router": "^7.18.5"
   },
   "devDependencies": {
-    "@rythmo/engine": "*",
     "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^22.20.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",

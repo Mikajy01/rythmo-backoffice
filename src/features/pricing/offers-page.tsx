@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import type { FeatureAccess, FeatureKey, PlanView, SubscriptionSettingsView } from '@rythmo/engine';
+import type { FeatureAccess, FeatureKey, PlanView, SubscriptionSettingsView } from '@/contracts';
 import { Pencil, Plus, Tag, Trash2 } from 'lucide-react';
 import { useEffect, useState, type FormEvent } from 'react';
 import { Button, IconButton } from '@/components/ui/button';

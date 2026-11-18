@@ -1,4 +1,4 @@
-import type { AdminPermission } from '@rythmo/engine';
+import type { AdminPermission } from '@/contracts';
 import {
   LayoutDashboard,
   LogOut,

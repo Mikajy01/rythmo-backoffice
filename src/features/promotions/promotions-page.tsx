@@ -1,5 +1,5 @@
 import { keepPreviousData, useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import type { Paginated, PlanView, PromotionKind, PromotionStatus, PromotionView } from '@rythmo/engine';
+import type { Paginated, PlanView, PromotionKind, PromotionStatus, PromotionView } from '@/contracts';
 import { Pencil, Plus, Search, Ticket, Trash2 } from 'lucide-react';
 import { useEffect, useState, type FormEvent } from 'react';
 import { Button, IconButton } from '@/components/ui/button';

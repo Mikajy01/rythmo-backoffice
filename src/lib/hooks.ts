@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import type { CurrencyConfig, MetaView } from '@rythmo/engine';
+import type { CurrencyConfig, MetaView } from '@/contracts';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import { api } from './api';

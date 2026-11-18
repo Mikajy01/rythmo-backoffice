@@ -1,5 +1,5 @@
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import type { AdminUserListItem, Paginated } from '@rythmo/engine';
+import type { AdminUserListItem, Paginated } from '@/contracts';
 import { Ban, CheckCircle2, Search, UserX, Users } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';

@@ -1,4 +1,4 @@
-import type { AdminPermission } from '@rythmo/engine';
+import type { AdminPermission } from '@/contracts';
 import { ShieldAlert } from 'lucide-react';
 import { createBrowserRouter, Navigate, useLocation, type RouteObject } from 'react-router';
 import { AppShell } from '@/components/layout/app-shell';
